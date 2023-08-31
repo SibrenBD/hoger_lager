@@ -1,13 +1,30 @@
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+  background-color: aquamarine;
+}
+
 .center {
     margin: auto;
     width: 50%;
     --angle: 0deg;
     border: 10px solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
-    
     animation: 10s rotate linear infinite;
     padding: 10px;
     text-align: center;
+  }
+  .button{
+    margin: auto;
+    margin-top: 225px;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
   }
 
 @keyframes rotate {

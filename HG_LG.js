@@ -1,6 +1,4 @@
+function myFunction() {
+    document.getElementById("Intecator").innerHTML = "Hello World";
+  }
 
-
-
-function start_F() {
-    document.getElementById("indicator").innerHTML = "hallo hallo"
-}
