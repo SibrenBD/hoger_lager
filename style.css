@@ -1,0 +1,23 @@
+.center {
+    margin: auto;
+    width: 50%;
+    --angle: 0deg;
+    border: 10px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    
+    animation: 10s rotate linear infinite;
+    padding: 10px;
+    text-align: center;
+  }
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
