@@ -1,34 +1,48 @@
 *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 body{
   background-color: aquamarine;
+
 }
 
 .center {
     margin: auto;
     width: 30%;
     --angle: 0deg;
-    border: 10px solid;
+    border: 5px solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
     animation: 10s rotate linear infinite;
-    padding: 10px;
+    padding: 2px;
     text-align: center;
+
   }
-  
-.box-model{
+
+.header_title{
   margin: auto;
-  margin-top: 225px;
+  margin-top: 200px;
   width: 50%;
   height: 50vh;
   border: solid 5px;
   padding: 10px;
+}
+.box-model{
+  margin: auto;
+  margin-top: 100px;
+  width: 30%;
+  height: 100px;
+  --angle: 0deg;
+  border: 5px solid black;
+  padding: 5px;
   text-align: center;
 }
-button{
-  float: left;
-  margin: 2px;
+
+/* knop in proces, we kunnen hier plaatjes of icons in plaatsen */
+button {
+  float: center;
+  
 }
 
 @keyframes rotate {
