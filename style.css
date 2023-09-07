@@ -11,6 +11,7 @@ body {
   margin: auto;
   margin-top: 200px;
   width: 50%;
+  height: auto;
   height: 60vh;
   border: solid 5px;
   padding: 10px;
