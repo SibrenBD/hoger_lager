@@ -1,6 +1,5 @@
 *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 body{
@@ -17,7 +16,6 @@ body{
     animation: 10s rotate linear infinite;
     padding: 2px;
     text-align: center;
-
   }
 
 .header_title{
@@ -28,6 +26,7 @@ body{
   border: solid 5px;
   padding: 10px;
 }
+
 .box-model{
   margin: auto;
   margin-top: 100px;
