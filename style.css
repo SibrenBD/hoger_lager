@@ -26,21 +26,23 @@ body {
   text-align: center;
   background-color: aqua;
 }
+
 /* spelregels hover */
 #overlay {
   position: fixed;
   display: none;
   margin: auto;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
 }
+
 .dice {
   border: 5px solid black;
   width: 70%;
@@ -48,6 +50,7 @@ body {
   margin-top: 50px;
   background-color: aqua;
 }
+
 .dice p {
   text-align: center;
 }
@@ -55,8 +58,9 @@ body {
 .dice img {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
+  padding-top: 30px;
   width: 30%;
+  display: block;
 }
 
 .btn-model {
