@@ -20,6 +20,8 @@ console.log(nummer2)
 
 
 function gooi() {
+  nummer1 = Math.round(Math.random() * 6) + 1;
+  nummer2 = Math.round(Math.random() * 6) + 1;
   switch (nummer1) {
     case 1:
       dobbel_p_1.src = "/images/Dobbelsteen1.png"
