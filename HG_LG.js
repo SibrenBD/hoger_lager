@@ -4,8 +4,8 @@
 
 
 
-let nummer1 = Math.round(Math.random() * 6) + 1;
-let nummer2 = Math.round(Math.random() * 6) + 1;
+let nummer1
+let nummer2
  
 const dobbel_p_1 = document.querySelector(".dobbel_1")
 
