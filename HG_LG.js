@@ -16,6 +16,8 @@ document.querySelector(".cp_score").innerHTML = "computer: " + cp_score
 
 
 function gooi() {
+  cp_score -= 1;
+  document.querySelector(".cp_score").innerHTML = "computer: " + cp_score
   nummer1 = Math.round(Math.random() * 6) + 1;
   nummer2 = Math.round(Math.random() * 6) + 1;
   switch (nummer1) {
