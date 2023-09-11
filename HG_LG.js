@@ -8,7 +8,7 @@ let nummer1
 let nummer2
  
 const dobbel_p_1 = document.querySelector(".dobbel_1")
-
+const dobbel_p_2 = document.querySelector(".dobbel_2")
 
 
 console.log(nummer1);
@@ -40,6 +40,25 @@ function gooi() {
       break
     case 6:
       dobbel_p_1.src = "/images/Dobbelsteen6.png"
+  }
+  switch (nummer2) {
+    case 1:
+      dobbel_p_2.src = "/images/Dobbelsteen1.png"
+      break
+    case 2:
+      dobbel_p_2.src = "/images/Dobbelsteen2.png"
+      break
+    case 3:
+      dobbel_p_2.src = "/images/Dobbelsteen3.png"
+      break
+    case 4:
+      dobbel_p_2.src = "/images/Dobbelsteen4.png"
+      break
+    case 5:
+      dobbel_p_2.src = "/images/Dobbelsteen5.png"
+      break
+    case 6:
+      dobbel_p_2.src = "/images/Dobbelsteen6.png"
   }
 }
 // overlay
