@@ -40,6 +40,14 @@ function gooi() {
       dobbel_p_1.src = "/images/Dobbelsteen6.png"
   }
 }
+// overlay
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
 
 
 
