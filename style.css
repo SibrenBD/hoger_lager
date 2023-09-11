@@ -26,7 +26,21 @@ body {
   text-align: center;
   background-color: aqua;
 }
-
+/* spelregels hover */
+#overlay {
+  position: fixed;
+  display: none;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 2;
+  cursor: pointer;
+}
 .dice {
   border: 5px solid black;
   width: 70%;
