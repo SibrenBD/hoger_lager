@@ -7,16 +7,12 @@
 let nummer1
 let nummer2
  
-const dobbel_p_1 = document.querySelector(".dobbel_1")
-const dobbel_p_2 = document.querySelector(".dobbel_2")
+const dobbel_p_1 = document.querySelector(".dobbel_1");
+const dobbel_p_2 = document.querySelector(".dobbel_2");
+// computer score aanpassen naar autoselector
 
-
-console.log(nummer1);
-console.log(nummer2)
-
-
-
-
+let cp_score = 5;
+document.querySelector(".cp_score").innerHTML = "computer: " + cp_score
 
 
 function gooi() {
