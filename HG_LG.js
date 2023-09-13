@@ -1,9 +1,4 @@
 
-
-
-
-
-
 let nummer1
 let nummer2
  
@@ -12,12 +7,16 @@ const dobbel_p_2 = document.querySelector(".dobbel_2");
 // computer score aanpassen naar autoselector
 
 let cp_score = 5;
-document.querySelector(".cp_score").innerHTML = "computer: " + cp_score
+let Pl_score = 5;
+document.querySelector(".cp_score").innerHTML = "computer: " + cp_score;
+document.querySelector(".PL_score").innerHTML = "player: " + Pl_score;
 
 
 function gooi() {
   cp_score -= 1;
+  Pl_score += 1;
   document.querySelector(".cp_score").innerHTML = "computer: " + cp_score
+  document.querySelector(".PL_score").innerHTML = "player: " + Pl_score;
   nummer1 = Math.round(Math.random() * 6) + 1;
   nummer2 = Math.round(Math.random() * 6) + 1;
   switch (nummer1) {
@@ -59,6 +58,7 @@ function gooi() {
       dobbel_p_2.src = "/images/Dobbelsteen6.png"
   }
 }
+
 // overlay
 function on() {
   document.getElementById("overlay").style.display = "block";
