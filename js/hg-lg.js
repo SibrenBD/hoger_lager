@@ -56,7 +56,9 @@ switch (cpRoll) {
 document.querySelector(".cpRoll").innerHTML = "computer roll: " + cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 
-
+if (ronde == false) {
+  document.querySelector(".beurt").innerHTML = "beurt: computer"
+}
 
 
 
