@@ -32,36 +32,18 @@ let ronde = false;
 
 cpRoll = Math.floor(Math.random() * 6) + 1;
 
-switch (cpRoll) {
-  case 1:
-    dobbelp1.src = "/images/Dobbelsteen1.png"
-    break
-  case 2:
-    dobbelp1.src = "/images/Dobbelsteen2.png"
-    break
-  case 3:
-    dobbelp1.src = "/images/Dobbelsteen3.png"
-    break
-  case 4:
-    dobbelp1.src = "/images/Dobbelsteen4.png"
-    break
-  case 5:
-    dobbelp1.src = "/images/Dobbelsteen5.png"
-    break
-  case 6:
-    dobbelp1.src = "/images/Dobbelsteen6.png"
-}
+
 
 
 document.querySelector(".cpRoll").innerHTML = "computer roll: " + cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 
-if (ronde == false) {
-  document.querySelector(".beurt").innerHTML = "beurt: computer"
-}
-if (ronde == true) {
-  document.querySelector(".beurt").innerHTML = "beurt: player"
-}
+
+  document.querySelector(".beurt").innerHTML = "Druk op gooien om het spel te starten"
+
+
+  
+
 
 
 
