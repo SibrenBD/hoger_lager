@@ -59,7 +59,9 @@ document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 if (ronde == false) {
   document.querySelector(".beurt").innerHTML = "beurt: computer"
 }
-
+if (ronde == true) {
+  document.querySelector(".beurt").innerHTML = "beurt: player"
+}
 
 
 
@@ -93,6 +95,8 @@ function gooi() {
     }
 
     document.querySelector(".cpRoll").innerHTML = "computer roll: " + cpRoll;
+    
+    document.querySelector(".beurt").innerHTML = "beurt: computer"
 
     ronde = true
 
@@ -125,6 +129,8 @@ function gooi() {
     }
 
     document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
+
+    document.querySelector(".beurt").innerHTML = "beurt: player"
 
     ronde = false
 
