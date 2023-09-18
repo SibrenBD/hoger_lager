@@ -52,6 +52,10 @@ body{
   cursor: pointer;
 }
 
+.beurt p {
+  text-align: center;
+}
+
 .dice {
   border: 5px solid tomato;
   width: 70%;
