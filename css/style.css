@@ -47,7 +47,7 @@ body{
   right: 0;
   bottom: 0;
   border: 2px solid lightcyan;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   z-index: 2;
   cursor: pointer;
