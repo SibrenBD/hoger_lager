@@ -52,8 +52,9 @@ body{
   cursor: pointer;
 }
 
-.beurt p {
+.ronde {
   text-align: center;
+  color: #fff;
 }
 
 .dice {
@@ -67,7 +68,6 @@ body{
 .dice p {
   text-align: center;
   color: #fff;
-  
 }
 
 .dice img {
