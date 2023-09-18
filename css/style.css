@@ -1,5 +1,6 @@
 * {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 body{
@@ -7,16 +8,18 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .box-model {
-  margin: auto;
+  margin: 300px auto 0;
   margin-top: 100px;
   width: 50%;
   height: 80vh;
   background-color: rgba(0, 0, 0, 0.2);
-  border: solid 5px green;
+  border: solid 5px yellow;
+  border-radius: 15px;
   padding: 10px;
   top: 100vh;
 }
