@@ -67,6 +67,7 @@ body{
 .dice p {
   text-align: center;
   color: #fff;
+  
 }
 
 .dice img {
@@ -84,9 +85,11 @@ body{
   height: 100px;
   padding: 5px;
   text-align: center;
+  
 }
 
 /* knop in proces, we kunnen hier plaatjes of icons in plaatsen */
 button {
   float: center;
+  font-size: large;
 }
