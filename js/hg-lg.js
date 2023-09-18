@@ -29,29 +29,29 @@ function lager() {
 
 let ronde = false;
 
-if (ronde == false) {
-  cpRoll = Math.floor(Math.random() * 6) + 1;
 
-  switch (cpRoll) {
-    case 1:
-      dobbelp1.src = "/images/Dobbelsteen1.png"
-      break
-    case 2:
-      dobbelp1.src = "/images/Dobbelsteen2.png"
-      break
-    case 3:
-      dobbelp1.src = "/images/Dobbelsteen3.png"
-      break
-    case 4:
-      dobbelp1.src = "/images/Dobbelsteen4.png"
-      break
-    case 5:
-      dobbelp1.src = "/images/Dobbelsteen5.png"
-      break
-    case 6:
-      dobbelp1.src = "/images/Dobbelsteen6.png"
-  }
+cpRoll = Math.floor(Math.random() * 6) + 1;
+
+switch (cpRoll) {
+  case 1:
+    dobbelp1.src = "/images/Dobbelsteen1.png"
+    break
+  case 2:
+    dobbelp1.src = "/images/Dobbelsteen2.png"
+    break
+  case 3:
+    dobbelp1.src = "/images/Dobbelsteen3.png"
+    break
+  case 4:
+    dobbelp1.src = "/images/Dobbelsteen4.png"
+    break
+  case 5:
+    dobbelp1.src = "/images/Dobbelsteen5.png"
+    break
+  case 6:
+    dobbelp1.src = "/images/Dobbelsteen6.png"
 }
+
 
 document.querySelector(".cpRoll").innerHTML = "computer roll: " + cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
@@ -64,14 +64,18 @@ document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 
 
 function gooi() {
+
   if (ronde == false) {
-    
-    ronde = true
+
+
 
     if (plBet != undefined) {
-      plRoll = Math.floor(Math.random() * 6) + 1;
 
-      switch (plRoll) {
+
+
+      cpRoll = Math.floor(Math.random() * 6) + 1;
+
+      switch (cpRoll) {
         case 1:
           dobbelp1.src = "/images/Dobbelsteen1.png"
           break
@@ -93,14 +97,53 @@ function gooi() {
 
       document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
       document.querySelector(".plBet").innerHTML = "player bet: " + plBet;
+
+      ronde = true
     }
-  
 
 
 
 
 
 
+
+  }
+  else {
+    ronde = true
+  }
+
+  if (ronde == true) {
+
+    if (plBet != undefined)
+
+
+
+      plRoll = Math.floor(Math.random() * 6) + 1;
+
+
+    switch (plRoll) {
+      case 1:
+        dobbelp1.src = "/images/Dobbelsteen1.png"
+        break
+      case 2:
+        dobbelp1.src = "/images/Dobbelsteen2.png"
+        break
+      case 3:
+        dobbelp1.src = "/images/Dobbelsteen3.png"
+        break
+      case 4:
+        dobbelp1.src = "/images/Dobbelsteen4.png"
+        break
+      case 5:
+        dobbelp1.src = "/images/Dobbelsteen5.png"
+        break
+      case 6:
+        dobbelp1.src = "/images/Dobbelsteen6.png"
+    }
+    document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
+    document.querySelector(".plBet").innerHTML = "player bet: " + plBet;
+
+    ronde = false
   }
   else {
     ronde = false
