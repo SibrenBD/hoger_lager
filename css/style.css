@@ -15,10 +15,7 @@ body{
   margin-top: 100px;
   width: 50%;
   height: 80vh;
-  background-image: url(/images/bg-borderbox.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
   border: solid 5px green;
   padding: 10px;
   top: 100vh;
@@ -29,7 +26,6 @@ body{
   width: 30%;
   --angle: 0deg;
   border: 5px solid black;
-  animation: 10s rotate linear infinite;
   padding: 2px;
   text-align: center;
   background-color: aqua;
@@ -54,15 +50,16 @@ body{
 }
 
 .dice {
-  border: 5px solid black;
+  border: 5px solid tomato;
   width: 70%;
   margin: auto;
   margin-top: 50px;
-  background-color: aqua;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dice p {
   text-align: center;
+  color: #fff;
 }
 
 .dice img {
