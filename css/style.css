@@ -2,18 +2,26 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body {
-  background-color: aquamarine;
-
+body{
+  background-image: url(/images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .box-model {
   margin: auto;
+  margin-top: 100px;
   width: 50%;
-  height: 90vh;
-  border: solid 5px black;
+  height: 80vh;
+  background-image: url(/images/bg-borderbox.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 5px green;
   padding: 10px;
-  background-color: green;
+  top: 100vh;
 }
 
 .center {
