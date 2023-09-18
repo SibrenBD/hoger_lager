@@ -62,7 +62,6 @@ div p {
   width: 70%;
   margin: auto;
   margin-top: 50px;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dice p {
@@ -85,7 +84,6 @@ div p {
   height: 100px;
   padding: 5px;
   text-align: center;
-  
 }
 
 /* knop in proces, we kunnen hier plaatjes of icons in plaatsen */
