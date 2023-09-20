@@ -18,7 +18,7 @@ body{
   width: 50%;
   height: 80vh;
   background-color: rgba(0, 0, 0, 0.2);
-  border: solid 5px yellow;
+  border: solid 10px yellow;
   border-radius: 15px;
   padding: 10px;
   top: 100vh;
@@ -26,9 +26,11 @@ body{
 
 .center {
   margin: auto;
-  width: 30%;
+  width: 250px;
+  height: 135px;
   --angle: 0deg;
   border: 5px solid black;
+  border-radius: 50%;
   padding: 2px;
   text-align: center;
   background-color: aqua;
