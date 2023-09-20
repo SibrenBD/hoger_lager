@@ -37,7 +37,7 @@ body{
 }
 
 /* spelregels hover */
-#overlay {
+.overlay {
   position: fixed;
   display: none;
   margin: auto;
