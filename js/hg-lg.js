@@ -133,9 +133,9 @@ function gooi() {
 
 // overlay
 function on() {
-  document.getElementById("overlay").style.display = "block";
+  document.querySelector(".overlay").style.display = "block";
 }
 
 function off() {
-  document.getElementById("overlay").style.display = "none";
+  document.querySelector(".overlay").style.display = "none";
 }
