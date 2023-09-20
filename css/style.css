@@ -1,6 +1,7 @@
 * {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 body{
@@ -54,16 +55,28 @@ body{
   cursor: pointer;
 }
 
-div p {
+.beurt {
   text-align: center;
   color: #fff;
 }
 
 .dice {
   border: 5px solid tomato;
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 50px;
+  padding: 10px;
+}
+
+.cpRoll {
+  color: #fff;
+  text-align: center;
+}
+
+.score {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .dice p {
@@ -72,9 +85,8 @@ div p {
 }
 
 .dice img {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
+  margin: auto;
+  padding: 30px;
   width: 30%;
   display: block;
 }

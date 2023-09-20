@@ -35,7 +35,7 @@ cpRoll = Math.floor(Math.random() * 6) + 1;
 
 
 
-document.querySelector(".cpRoll").innerHTML = "computer roll: " + cpRoll;
+document.querySelector(".cpRoll").innerHTML += cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 
 
