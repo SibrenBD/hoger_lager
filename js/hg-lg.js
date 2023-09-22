@@ -1,18 +1,14 @@
 
-
-
-
 const dobbelp1 = document.querySelector(".dobbel1");
 // computer score aanpassen naar autoselector
 
-let cpRoll
-let plRoll
+let cpRoll = "niks"
+let plRoll = "niks"
 
 let plBet
 
-let score = 0
-document.querySelector(".score").innerHTML += score
-
+let score = 10
+document.querySelector(".score").innerHTML = "score: " + score
 
 
 // image
@@ -23,16 +19,8 @@ document.querySelector(".score").innerHTML += score
 
 let ronde = false;
 
-
-cpRoll = Math.floor(Math.random() * 6) + 1;
-
-
-
-
 document.querySelector(".cpRoll").innerHTML += cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
-
-
 document.querySelector(".turn").innerHTML = "Druk op gooien om het spel te starten"
 
 
@@ -41,7 +29,6 @@ function hoger() {
   document.querySelector(".plBet").innerHTML = "player bet: " + plBet;
 
   if (ronde == false) {
-    
 
     cpRoll = Math.floor(Math.random() * 6) + 1;
 
@@ -76,6 +63,15 @@ function hoger() {
     
 
     plRoll = Math.floor(Math.random() * 6) + 1;
+
+    if (plRoll > cpRoll) {
+      score += 1;
+    }
+    else if (plRoll < cpRoll){
+      score -= 1;
+    }
+    
+    document.querySelector(".score").innerHTML = "score: " + score
 
     switch (plRoll) {
       case 1:
@@ -143,12 +139,19 @@ function lager() {
     ronde = true
 
   }
-
-
-  else if (ronde == true) {
+  if (ronde == true) {
     
-
     plRoll = Math.floor(Math.random() * 6) + 1;
+
+    if (plRoll > cpRoll) {
+      score += 1;
+    }
+    else if (plRoll < cpRoll){
+      score -= 1;
+    }
+    
+    document.querySelector(".score").innerHTML = "score: " + score
+
 
     switch (plRoll) {
       case 1:
