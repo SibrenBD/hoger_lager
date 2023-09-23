@@ -4,20 +4,20 @@
   flex-wrap: wrap;
 }
 
-body{
+html{
   background-image: url(/images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
 .box-model {
   margin: 300px auto 0;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 50%;
-  height: 80vh;
+  height: 750px;
   background-color: rgba(0, 0, 0, 0.2);
   border: solid 10px yellow;
   border-radius: 15px;
