@@ -4,10 +4,9 @@ const dobbelp1 = document.querySelector(".dobbel1");
 
 let cpRoll = "niks"
 let plRoll = "niks"
-
 let plBet
-
 let score = 10
+
 document.querySelector(".score").innerHTML = "score: " + score
 
 
@@ -108,7 +107,6 @@ function lager() {
   document.querySelector(".plBet").innerHTML = "player bet: " + plBet;
 
   if (ronde == false) {
-    
 
     cpRoll = Math.floor(Math.random() * 6) + 1;
 
@@ -139,6 +137,7 @@ function lager() {
     ronde = true
 
   }
+
   if (ronde == true) {
     
     plRoll = Math.floor(Math.random() * 6) + 1;
@@ -181,23 +180,6 @@ function lager() {
 
   }
 }
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
 
 
 // overlay
