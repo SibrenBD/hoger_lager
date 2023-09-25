@@ -2,12 +2,13 @@
 const dobbelp1 = document.querySelector(".dobbel1");
 // computer score aanpassen naar autoselector
 
-let cpRoll = "niks"
-let plRoll = "niks"
-let plBet
-let score = 10
+let cpRoll = "niks";
+let plRoll = "niks";
+let plBet;
+let score = 10;
 
-document.querySelector(".score").innerHTML = "score: " + score
+let time;
+
 
 
 // image
@@ -20,9 +21,10 @@ let ronde;
 
 document.querySelector(".cpRoll").innerHTML += cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
+
 document.querySelector(".turn").innerHTML = "Druk op 'start game' om het spel te starten"
 
-
+document.querySelector(".score").innerHTML = "score: " + score
 
 
 // ronde wisseling
@@ -98,6 +100,7 @@ function turnSwitch() {
 
     document.querySelector(".turn").innerHTML = "beurt: player"
 
+    
     ronde = false
 
   }
@@ -133,9 +136,12 @@ function lager() {
 function startGame() {
   document.querySelector(".btn-start").remove();
   ronde = false
-  
+
   turnSwitch()
 }
+
+
+
 
 // overlay
 function on() {
