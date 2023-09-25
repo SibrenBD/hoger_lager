@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/test.css">
-    <title>test</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoger Lager</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-    
-    <div class="grid-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>  
-        <div>4</div>
+
+  <div class="box-model">
+    <div class="center">
+      <h1>Hoger Lager</h1>
+      <!--spelregels-->
+      <div class="overlay" onclick="off()">
+        <h1>Spel-regels<br></h1>
+        <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
+          hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
       </div>
-      
+      <button onclick="on()">spelregels</button>
+    </div>
+    <!--Ronde paragraaf -->
+    <div>
+      <p class="turn"></p>
+    </div>
+
+    <div class="dice">
+      <div class="dice-img">
+        <div class="cpRoll">Computer Roll: </div>
+        <div class="score">score: </div>
+        <img class="dobbel1" src="./images/1.png" alt="img1"></img>
+        <p class="plRoll"></p>
+        <p class="plBet"></p>
+        <div class="btn-model">
+          <button onclick="hoger()">Hoger</button>
+          <button onclick="lager()">Lager</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/hg-lg.js"></script>
 </body>
+
 </html>

@@ -1,12 +1,107 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: auto 150px  auto auto;
-    gap: 10px;
-}
-
-.grid-container > div {
-    background-color: blue;
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  
+  html{
+    background-image: url(/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .box-model {
+    margin: 300px auto 0;
+    margin-top: 50px;
+    width: 50%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 10px yellow;
+    border-radius: 15px;
+    padding: 10px;
+    top: 100vh;
+  }
+  
+  .center {
+    margin: auto;
+    width: 250px;
+    height: 135px;
+    --angle: 0deg;
+    border: 5px solid black;
+    border-radius: 50%;
+    padding: 2px;
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    background-color: aqua;
+  }
+  
+  /* spelregels hover */
+  .overlay {
+    position: fixed;
+    display: none;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid lightcyan;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .turn {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .dice {
+    border: 5px solid tomato;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .cpRoll {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .score {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dice p {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .dice img {
+    margin: auto;
+    padding: 30px;
+    width: 30%;
+    display: block;
+  }
+  
+  .btn-model {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* knop in proces, we kunnen hier plaatjes of icons in plaatsen */
+  button {
+    float: center;
+    font-size: large;
   }
