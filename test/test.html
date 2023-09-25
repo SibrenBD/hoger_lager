@@ -11,38 +11,22 @@
 
 <body>
 
-  <div class="box-model">
-    <div class="center">
-      <h1>Hoger Lager</h1>
-      <!--spelregels-->
-      <div class="overlay" onclick="off()">
-        <h1>Spel-regels<br></h1>
-        <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
-          hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
-      </div>
-      <button onclick="on()">spelregels</button>
-    </div>
-    <!--Ronde paragraaf -->
-    <div>
-      <p class="turn"></p>
-    </div>
-
-    <div class="dice">
-      <div class="dice-img">
-        <div class="cpRoll">Computer Roll: </div>
-        <div class="score">score: </div>
-        <img class="dobbel1" src="/images/1.png" alt="img1"></img>
-        <p class="plRoll"></p>
-        <p class="plBet"></p>
-        <div class="btn-model">
-          <button onclick="hoger()">Hoger</button>
-          <button onclick="lager()">Lager</button>
+  <div class="flex-container">
+    <div class="flex-item1"> 
+        <h1>Hoger Lager</h1>
+        <div class="overlay" onclick="off()">
+            <h1>Spel-regels<br></h1>
+            <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
+              hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
+            </div>
+            <button onclick="on()">spelregels</button>
         </div>
-      </div>
-    </div>
+    <div class="flex-item2"></div>
+    <div class="flex-item3"></div>
+
   </div>
 
-  <script src="./js/hg-lg.js"></script>
+  <script src="/js/hg-lg.js"></script>
 </body>
 
 </html>
