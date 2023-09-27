@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher or Lower Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        #guess {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Higher or Lower Game</h1>
+    <p>Guess whether the next number will be higher or lower than the current number.</p>
+    <p>Current Number: <span id="currentNumber"></span></p>
+    <div id="message"></div>
+    <input type="radio" id="higher" name="guess" value="higher">
+    <label for="higher">Higher</label>
+    <input type="radio" id="lower" name="guess" value="lower">
+    <label for="lower">Lower</label>
+    <button id="submit">Submit Guess</button>
+
+    <script>
+        const currentNumberElement = document.getElementById('currentNumber');
+        const messageElement = document.getElementById('message');
+        const higherRadio = document.getElementById('higher');
+        const lowerRadio = document.getElementById('lower');
+        const submitButton = document.getElementById('submit');
+
+        let currentNumber = getRandomNumber();
+        displayCurrentNumber();
+
+        submitButton.addEventListener('click', checkGuess);
+
+        function getRandomNumber() {
+            return Math.floor(Math.random() * 100) + 1;
+        }
+
+        function displayCurrentNumber() {
+            currentNumberElement.textContent = currentNumber;
+        }
+
+        function checkGuess() {
+            const nextNumber = getRandomNumber();
+            const userGuess = (higherRadio.checked ? 'higher' : 'lower');
+            
+            if ((userGuess === 'higher' && nextNumber > currentNumber) ||
+                (userGuess === 'lower' && nextNumber < currentNumber)) {
+                messageElement.textContent = 'Correct!';
+            } else {
+                messageElement.textContent = 'Incorrect. Try again.';
+            }
+
+            currentNumber = nextNumber;
+            displayCurrentNumber();
+        }
+    </script>
+</body>
+</html>
