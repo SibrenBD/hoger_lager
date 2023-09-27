@@ -29,7 +29,6 @@ html{
   margin: auto;
   width: 250px;
   height: 135px;
-  --angle: 0deg;
   border: 5px solid black;
   border-radius: 50%;
   padding: 2px;

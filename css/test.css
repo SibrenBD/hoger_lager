@@ -1,80 +1,92 @@
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* compleet flex */
+html {
+  background-image: url(/images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.flex-container {
+  border: 5px solid yellow;
+  padding: 10px;
+  width: 50%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+}
+
+/* flex-Items */
+div {
+  border: 5px solid white;
+  width: 50%;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-item1 {
+  color: #fff;
+}
+
+.flex-item1 h1 {
+  color: #fff;
+  text-align: center;
   
-  /* compleet flex */
-  html{
-    background-image: url(/images/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-  }
+}
 
-  .flex-container {
-    border: 5px solid yellow;
-    padding: 10px;
-    width: 50%;
-    height: 80vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    display: flex;
-  }
+.flex-item2 {
+  color: #fff;
+  display: flex;
+}
 
-   /* flex-Items */
-  div {
-    border: 5px solid white;
-    width: 50%;
-    justify-content: center ;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+.flex-item3 {
+  display: flex;
+  color: #fff;
+}
 
-  .flex-item1 {
+.overlay {
+  position: fixed;
+  display: none;
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid lightcyan;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  z-index: 2;
+  cursor: pointer;
+}
 
-  }
+.rules {
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin: auto;
+  display: flex;
+}
 
-  .flex-item1 h1 {
-    color: #fff;
-    text-align: center;
-  }
+.btn {
+  float: left;
+  border: hidden;
+  padding: 10px;
+}
 
-  .flex-item2 {
-    
-  }
-
-  .flex-item3 {
-    
-  }
-
-  .overlay {
-    position: fixed;
-    display: none;
-    margin: auto;
-    width: 40%;
-    height: 40%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid lightcyan;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  
-  button {
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    margin: auto;
-    display: flex;
-  }
+button {
+  font-size: large;
+}
