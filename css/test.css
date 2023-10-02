@@ -45,6 +45,7 @@ div {
   text-align: center;
   
 }
+
 .header {
   display: flex;
   border: 5px solid black;
@@ -54,6 +55,7 @@ div {
   width: 50%;
   margin: auto;
 }
+
 .turn {
   text-align: center;
   color: #fff;
@@ -64,6 +66,16 @@ div {
 .flex-item2 {
   color: #fff;
   display: flex;
+  flex-direction: column;
+}
+.score-container {
+  border: hidden;
+  padding-left: 10px;
+}
+img {
+  margin: auto;
+  max-width: 50%;
+  height: 175px;
 }
 
 .flex-item3 {
@@ -97,7 +109,11 @@ div {
 }
 
 .btn {
+  display: flex;
+  flex-direction: row;
   float: left;
+  width: 100%;
+  margin: auto;
   border: hidden;
   padding: 10px;
 }
