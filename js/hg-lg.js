@@ -19,12 +19,15 @@ let time;
 
 let ronde;
 
+
+
 document.querySelector(".cpRoll").innerHTML += cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
 
 document.querySelector(".turn").innerHTML = "Druk op 'start game' om het spel te starten"
 
 document.querySelector(".score").innerHTML = "score: " + score
+
 
 
 // ronde wisseling
@@ -111,10 +114,10 @@ function turnSwitch() {
 // knoppen hoger en lager
 
 function hoger() {
-  
+  hogerBtn.setAttribute("disabled", "disabled");
   if (ronde != undefined) {
     plBet = "hoger";
-  
+
     turnSwitch()
   }
 

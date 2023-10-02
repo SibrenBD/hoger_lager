@@ -28,7 +28,7 @@ startBtn.addEventListener("click", startGame);
 
 
 function higher() {
-    
+    hogerBtn.setAttribute("disabled", "")
 }
 
 function lower() {
