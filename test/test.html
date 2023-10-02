@@ -12,33 +12,34 @@
 <body>
 
   <div class="flex-container">
-    <div class="flex-item1"> 
+    <div class="flex-item1">
       <div class="header">
         <h1>Hoger Lager</h1>
         <div class="overlay" onclick="off()">
-            <h1>Spel-regels<br></h1>
-            <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
-              hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
-            </div>
-            <button class="rules" onclick="on()">spelregels</button>
-          </div>
-
+          <h1>Spel-regels<br></h1>
+          <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
+            hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
         </div>
-    <div class="flex-item2">
-      <div class="content-2"><p>score: </p></div>
-      <div class="Img">
-        <img class="dobbel1" src="/images/1.png" alt="img1"></img>
+        <button class="rules" onclick="on()">spelregels</button>
       </div>
+      <p class="turn">turn</p>
+    </div>
+    <div class="flex-item2">
+      <div class="content-2">
+        <p>score: </p>
+        <br>
+
+        <img class="dobbel1" src="/images/1.png" alt="img1"></img>
     </div>
     <div class="flex-item3">
       <div class="btn">
-            <button onclick="hoger()">Hoger</button>
-            <button class="btn-start" onclick="startGame()">start game</button>
-            <button onclick="lager()">Lager</button>
+        <button onclick="hoger()">Hoger</button>
+        <button class="btn-start" onclick="startGame()">start game</button>
+        <button onclick="lager()">Lager</button>
+      </div>
     </div>
-  </div>
 
-  <script src="/js/hg-lg.js"></script>
+    <script src="/js/hg-lg.js"></script>
 </body>
 
 </html>
