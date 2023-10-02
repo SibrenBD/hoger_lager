@@ -45,6 +45,21 @@ div {
   text-align: center;
   
 }
+.header {
+  display: flex;
+  border: 5px solid black;
+  background-color: brown;
+  border-radius: 10%;
+  height: 100px;
+  width: 50%;
+  margin: auto;
+}
+.turn {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+}
 
 .flex-item2 {
   color: #fff;
