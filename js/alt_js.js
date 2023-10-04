@@ -1,6 +1,5 @@
 // overlay
 
-
 const rulesBtn = document.querySelector(".rules");
 rulesBtn.addEventListener("click", on);
 
@@ -15,31 +14,73 @@ function off() {
   document.querySelector(".overlay").style.display = "none";
 }
 
+// img
+
+const dice = document.querySelector(".dice");
+
 // knoppen
 
 const hogerBtn = document.querySelector(".btn-hoger");
-hogerbtn.addEventListener("click", higher);
+hogerBtn.addEventListener("click", higher);
 
 const lagerBtn = document.querySelector(".btn-lager");
 lagerBtn.addEventListener("click", lower)
 
 const startBtn = document.querySelector(".btn-start");
-startBtn.addEventListener("click", startGame);
+startBtn.addEventListener("click", start);
 
+
+let gameStarted = false;
+
+let currentNumber;
+let plBet;
+let score = 10;
 
 function higher() {
-    hogerBtn.setAttribute("disabled", "")
+  if (gameStarted == true) {
+    hogerBtn.setAttribute("disabled", "disabled");
+    lagerBtn.removeAttribute("disabled", "disabled");
+  }
 }
 
 function lower() {
+  if (gameStarted == true) {
 
+    lagerBtn.setAttribute("disabled", "disabled");
+    hogerBtn.removeAttribute("disabled", "disabled");
+  }
 }
 
 function start() {
-
+  if (gameStarted == false) {
+    currentNumber = Math.floor(Math.random() * 6) + 1
+    console.log(currentNumber);
+    gameStarted = true;
+    startBtn.textContent = "go!";
+  }
+  else if (gameStarted == true) {
+    currentNumber = Math.floor(Math.random() * 6) + 1
+    console.log(currentNumber);
+    submit();
+  }
 }
 
-let cpRoll = "niks";
-let plRoll = "niks";
-let plBet;
-let score = 10;
+function submit() {
+  lagerBtn.removeAttribute("disabled", "disabled");
+  hogerBtn.removeAttribute("disabled", "disabled");
+}
+
+function imgChange() {
+  switch (currentNumber) {
+    case 1:
+      dice.src = "images/1.png"
+      break;
+    case 2:
+      dice.src = "images/2.png"
+      case 1:
+        dice.src = "images/1.png"
+        break;
+      case 2:
+        dice.src = "images/2.png"
+  }
+}

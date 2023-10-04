@@ -16,7 +16,8 @@ html {
 }
 
 .flex-container {
-  border: 5px solid yellow;
+  border: hidden;
+  background-color: rgba(53, 143, 113, 0.4);
   padding: 10px;
   width: 50%;
   height: 80vh;
@@ -38,6 +39,7 @@ div {
 
 .flex-item1 {
   color: #fff;
+  border: hidden;
 }
 
 .flex-item1 h1 {
@@ -120,4 +122,14 @@ img {
 
 button {
   font-size: large;
+  cursor: pointer;
+  box-shadow: 10px;
+  width: 100px;
+  height: 35px;
+  border: 5px solid black;
+  color: darkblue;
+/* Nu zie je het als button en niet text */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
