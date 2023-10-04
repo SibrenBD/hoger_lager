@@ -77,10 +77,10 @@ function imgChange() {
       break;
     case 2:
       dice.src = "images/2.png"
-      case 1:
-        dice.src = "images/1.png"
-        break;
-      case 2:
-        dice.src = "images/2.png"
+    case 3:
+      dice.src = "images/1.png"
+      break;
+    case 4:
+      dice.src = "images/2.png"
   }
 }
