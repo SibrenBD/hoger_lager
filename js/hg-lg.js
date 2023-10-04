@@ -10,7 +10,6 @@ let score = 10;
 let time;
 
 
-
 // image
 
 
@@ -19,16 +18,10 @@ let time;
 
 let ronde;
 
-
-
 document.querySelector(".cpRoll").innerHTML += cpRoll;
 document.querySelector(".plRoll").innerHTML = "player roll: " + plRoll;
-
 document.querySelector(".turn").innerHTML = "Druk op 'start game' om het spel te starten"
-
 document.querySelector(".score").innerHTML = "score: " + score
-
-
 
 // ronde wisseling
 
@@ -109,8 +102,6 @@ function turnSwitch() {
   }
 }
 
-
-
 // knoppen hoger en lager
 
 function hoger() {
@@ -133,18 +124,12 @@ function lager() {
 
 }
 
-
-
-
 function startGame() {
   document.querySelector(".btn-start").remove();
   ronde = false
 
   turnSwitch()
 }
-
-
-
 
 // overlay
 function on() {
