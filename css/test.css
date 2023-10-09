@@ -55,7 +55,40 @@ div {
   height: 100px;
   width: 50%;
   margin: auto;
-  margin-top: 100px;
+}
+
+.win-lose {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: hidden;
+}
+
+.win-lose > p {
+  display: flex;
+  width: 100px;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
+
+.won{
+  border: 3px dotted green;
+  height: 42px;
+  /* text-align: center; */
+}
+
+.draw {
+  border: 3px dotted blue;
+  height: 42px;
+  /* text-align: center; */
+}
+
+.lose{
+  border: 3px dotted red;
+  height: 42px;
+  /* text-align: center; */
+
 }
 
 .turn {
@@ -66,14 +99,16 @@ div {
 }
 
 .flex-item2 {
-  color: #fff;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
+
 .score-container {
   border: hidden;
   padding-left: 10px;
 }
+
 img {
   margin: auto;
   max-width: 50%;
@@ -123,12 +158,11 @@ img {
 button {
   font-size: large;
   cursor: pointer;
-  box-shadow: 10px;
   width: 100px;
   height: 35px;
   border: 5px solid black;
-  color: darkblue;
-/* Nu zie je het als button en niet text */
+  color: rgb(2, 2, 189);
+/* Nu zie je het als button selecteer zie je het niet */
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hoger Lager</title>
   <link rel="stylesheet" href="/css/test.css" />
-</head>
-
-<body>
-
+ </head>
+ <body>
   <div class="flex-container">
     <div class="flex-item1">
       <div class="header">
         <h1>Hoger Lager</h1>
         <div class="overlay" onclick="off()">
           <h1>Spel-regels<br></h1>
-          <p>Omstebeurt gooi je een , je gokt of je lager of hoger dan de computer gooit. Zodra je het goed
-            hebt verdien je punten.<br><br> Elke goede antwoord verdien je dubble punten X </p>
+          <p>Je drukt eerst op start, dan begint het spel. Zodra het spel begint kun je gokken of je hoger of lager gaat gooien.<br><br> Zodra je het goed hebt krijg je een punt. Verlies je krijg je een min punt </p>
         </div>
         <button class="rules" onclick="on()">spelregels</button>
+      </div>
+      <div class="win-lose">
+        <p class="won"></p>
+        <p class="draw"></p>
+        <p class="lose"></p>
       </div>
     </div>
     <!-- box-2 -->
@@ -33,13 +34,16 @@
     <!-- box-3 -->
     <div class="flex-item3">
       <div class="btn">
+        <audio class="audio">
+          <source src="/audio/Sound_effect.mp3" type="audio/mp3">
+        </audio>
         <button class="btn-higher">Hoger</button>
         <button class="btn-start">start game</button>
         <button class="btn-lower">Lager</button>
       </div>
-    </div>
+     </div>
+  </div>
     <!-- Javascript -->
     <script src="/js/alt_js.js"></script>
-</body>
-
+ </body>
 </html>

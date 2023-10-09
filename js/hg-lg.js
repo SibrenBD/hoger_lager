@@ -124,6 +124,10 @@ function lager() {
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 104eb7dfbc489694ea6efdcdb17abf8de76492a8
 function startGame() {
   document.querySelector(".btn-start").remove();
   ronde = false
