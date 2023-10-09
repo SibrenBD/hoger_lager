@@ -125,6 +125,8 @@ function submit() {
       if (currentNumber > prevNumber) {
         console.log("Lesss goo");
         playerWon = true;
+        score++;
+        displayScore();
         showResult();
       }
       else if (currentNumber < prevNumber) {
@@ -145,6 +147,8 @@ function submit() {
         console.log("Lesss goo");
         showResult();
         playerWon = true;
+        score++;
+        displayScore();
       }
       else if (currentNumber > prevNumber) {
         console.log("Aww damn");
