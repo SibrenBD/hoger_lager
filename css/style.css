@@ -1,41 +1,125 @@
 * {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
+/* compleet flex */
+html {
   background-image: url(/images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
+  position: relative;
 }
 
-.box-model {
-  margin: 300px auto 0;
-  margin-top: 50px;
-  width: 50%;
-  height: 750px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: solid 10px yellow;
-  border-radius: 15px;
+.flex-container {
+  border: hidden;
+  background-color: rgba(53, 143, 113, 0.4);
   padding: 10px;
-  top: 100vh;
+  width: 50%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
 }
 
-.center {
-  margin: auto;
-  width: 250px;
-  height: 135px;
-  border: 5px solid black;
-  border-radius: 50%;
-  padding: 2px;
+/* flex-Items */
+div {
+  border: 5px solid white;
+  width: 50%;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-item1 {
+  color: #fff;
+  border: hidden;
+}
+
+.flex-item1 h1 {
+  color: #fff;
   text-align: center;
-  background-color: aqua;
 }
 
-/* spelregels hover */
+.header {
+  display: flex;
+  border: 5px solid black;
+  background-color: brown;
+  border-radius: 10%;
+  height: 100px;
+  width: 50%;
+  margin: auto;
+}
+
+.win-lose {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: hidden;
+}
+
+.win-lose > p {
+  display: flex;
+  width: 100px;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
+
+.won{
+  border: 3px dotted green;
+  height: 42px;
+  /* text-align: center; */
+}
+
+.draw {
+  border: 3px dotted blue;
+  height: 42px;
+  /* text-align: center; */
+}
+
+.lose{
+  border: 3px dotted red;
+  height: 42px;
+  /* text-align: center; */
+
+}
+
+.turn {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+}
+
+.flex-item2 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.score-container {
+  border: hidden;
+  padding-left: 10px;
+}
+
+img {
+  margin: auto;
+  max-width: 50%;
+  height: 175px;
+}
+
+.flex-item3 {
+  display: flex;
+  color: #fff;
+}
+
 .overlay {
   position: fixed;
   display: none;
@@ -47,59 +131,39 @@ html{
   right: 0;
   bottom: 0;
   border: 2px solid lightcyan;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(182, 37, 37, .8);
   color: #fff;
   z-index: 2;
   cursor: pointer;
 }
 
-.turn {
-  text-align: center;
-  color: #fff;
+.rules {
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  margin: auto;
+  display: flex;
 }
 
-.dice {
-  border: 5px solid tomato;
-  width: 80%;
+.btn {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  width: 100%;
   margin: auto;
-  margin-top: 50px;
+  border: hidden;
   padding: 10px;
 }
 
-.cpRoll {
-  color: #fff;
-  text-align: center;
-}
-
-.score {
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.dice p {
-  text-align: center;
-  color: #fff;
-}
-
-.dice img {
-  margin: auto;
-  padding: 30px;
-  width: 30%;
-  display: block;
-}
-
-.btn-model {
-  margin: auto;
-  margin-top: 20px;
-  width: 50%;
-  height: 100px;
-  padding: 5px;
-  text-align: center;
-}
-
-/* knop in proces, we kunnen hier plaatjes of icons in plaatsen */
 button {
-  float: center;
   font-size: large;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  border: 5px solid black;
+  color: rgb(2, 2, 189);
+/* Nu zie je het als button selecteer zie je het niet */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
