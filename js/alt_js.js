@@ -30,7 +30,7 @@ startBtn.addEventListener("click", start);
 // Win or Lose
 let playerWon;
 const won = document.querySelector(".won");
-const gelijkspel = document.querySelector(".draw")
+const draw = document.querySelector(".draw")
 const lose = document.querySelector(".lose");
 
 
@@ -42,12 +42,15 @@ function showResult() {
     case false:
       lose.textContent = "Je hebt verloren";
       break;
+    case undefined:
+      draw.textContent = "Gelijk spel"
   }
 }
 
 function hideResults() {
   won.textContent = "";
   lose.textContent = "";
+  draw.textContent = ""
 }
 
 // score display
@@ -134,6 +137,7 @@ function submit() {
       else if (currentNumber == prevNumber) {
         console.log("bruh");
         playerWon = undefined;
+        showResult();
       }
       break;
     case "lower":
@@ -152,6 +156,7 @@ function submit() {
       else if (currentNumber == prevNumber) {
         console.log("bruh");
         playerWon = undefined;
+        showResult();
       }
       break;
   }
