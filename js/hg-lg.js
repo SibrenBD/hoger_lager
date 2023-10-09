@@ -109,8 +109,6 @@ function turnSwitch() {
   }
 }
 
-
-
 // knoppen hoger en lager
 
 function hoger() {
@@ -134,17 +132,12 @@ function lager() {
 }
 
 
-
-
 function startGame() {
   document.querySelector(".btn-start").remove();
   ronde = false
 
   turnSwitch()
 }
-
-
-
 
 // overlay
 function on() {

@@ -1,5 +1,4 @@
-// overlay
-
+// overlay spelregels
 const rulesBtn = document.querySelector(".rules");
 rulesBtn.addEventListener("click", on);
 
@@ -15,10 +14,9 @@ function off() {
 }
 
 // img
-
 const dice = document.querySelector(".dice");
 
-// knoppen
+// buttons
 
 const higherBtn = document.querySelector(".btn-higher");
 higherBtn.addEventListener("click", higher);
@@ -29,8 +27,30 @@ lowerBtn.addEventListener("click", lower);
 const startBtn = document.querySelector(".btn-start");
 startBtn.addEventListener("click", start);
 
-// score display
+// Win or Lose
+let playerWon;
+const won = document.querySelector(".won");
+const gelijkspel = document.querySelector(".draw")
+const lose = document.querySelector(".lose");
 
+
+function showResult() {
+  switch (playerWon) {
+    case true:
+      won.textContent = "Je hebt gewonnen";
+      break;
+    case false:
+      lose.textContent = "Je hebt verloren";
+      break;
+  }
+}
+
+function hideResults() {
+  won.textContent = "";
+  lose.textContent = "";
+}
+
+// score display
 const scoreDisplay = document.querySelector(".score");
 
 function displayScore() {
@@ -38,9 +58,13 @@ function displayScore() {
   scoreDisplay.textContent += score;
 }
 
+// sound script
+const audio = document.querySelector(".audio");
+function playSound() {
+  audio.play();
+}
+
 // game 
-
-
 let gameStarted = false;
 let currentNumber;
 let prevNumber;
@@ -50,6 +74,7 @@ let score = 10;
 displayScore();
 
 function higher() {
+  hideResults();
   if (gameStarted == true) {
     higherBtn.setAttribute("disabled", "disabled");
     lowerBtn.removeAttribute("disabled", "disabled");
@@ -59,6 +84,7 @@ function higher() {
 }
 
 function lower() {
+  hideResults();
   if (gameStarted == true) {
     lowerBtn.setAttribute("disabled", "disabled");
     higherBtn.removeAttribute("disabled", "disabled");
@@ -70,7 +96,7 @@ function lower() {
 function start() {
   if (gameStarted == false) {
     gameStarted = true;
-    startBtn.textContent = "go!";
+    startBtn.textContent = "Submit";
     startBtn.setAttribute("disabled", "disabled");
     currentNumber = Math.floor(Math.random() * 6) + 1;
     imgChange();
@@ -78,6 +104,7 @@ function start() {
   else if (gameStarted == true) {
     submit();
     imgChange();
+    playSound();
   }
 }
 
@@ -88,39 +115,48 @@ function submit() {
   prevNumber = currentNumber;
   currentNumber = Math.floor(Math.random() * 6) + 1;
 
+// THE CHECK
 
   switch (playerBet) {
     case "higher":
       if (currentNumber > prevNumber) {
         console.log("Lesss goo");
+        playerWon = true;
+        showResult();
       }
       else if (currentNumber < prevNumber) {
         console.log("Aww damn");
+        playerWon = false;
+        showResult();
         score--;
         displayScore();
       }
       else if (currentNumber == prevNumber) {
         console.log("bruh");
+        playerWon = undefined;
       }
       break;
     case "lower":
       if (currentNumber < prevNumber) {
         console.log("Lesss goo");
+        showResult();
+        playerWon = true;
       }
       else if (currentNumber > prevNumber) {
         console.log("Aww damn");
+        playerWon = false;
+        showResult();
         score--;
         displayScore();
       }
       else if (currentNumber == prevNumber) {
         console.log("bruh");
+        playerWon = undefined;
       }
       break;
   }
   playerBet = "nothing";
 }
-
-
 
 function imgChange() {
   switch (currentNumber) {

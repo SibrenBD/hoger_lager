@@ -58,6 +58,23 @@ div {
   margin-top: 100px;
 }
 
+.won{
+  float: left;
+  border: 3px dotted green;
+}
+
+.lose{
+  float: right;
+  border: 3px dotted red;
+}
+
+.draw {
+  border: 3px dotted blue;
+  width: 80px;
+  margin-left: 40%;
+  padding-left: 80px;
+}
+
 .turn {
   text-align: center;
   color: #fff;
@@ -66,14 +83,16 @@ div {
 }
 
 .flex-item2 {
-  color: #fff;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
+
 .score-container {
   border: hidden;
   padding-left: 10px;
 }
+
 img {
   margin: auto;
   max-width: 50%;
@@ -123,11 +142,10 @@ img {
 button {
   font-size: large;
   cursor: pointer;
-  box-shadow: 10px;
   width: 100px;
   height: 35px;
   border: 5px solid black;
-  color: darkblue;
+  color: rgb(2, 2, 189);
 /* Nu zie je het als button en niet text */
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
