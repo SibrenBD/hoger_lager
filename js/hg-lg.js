@@ -67,6 +67,10 @@ function playSound() {
   audio.play();
 }
 
+function loadSound() {
+  audio.load();
+}
+
 // game 
 let gameStarted = false;
 let currentNumber;
@@ -107,6 +111,7 @@ function start() {
   else if (gameStarted == true) {
     submit();
     imgChange();
+    loadSound();
     playSound();
   }
 }
