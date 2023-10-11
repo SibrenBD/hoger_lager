@@ -43,14 +43,15 @@ function showResult() {
       lose.textContent = "Je hebt verloren";
       break;
     case undefined:
-      draw.textContent = "Gelijk spel"
+      draw.textContent = "Gelijk spel";
+      break;
   }
 }
 
 function hideResults() {
   won.textContent = "";
   lose.textContent = "";
-  draw.textContent = ""
+  draw.textContent = "";
 }
 
 // score display
@@ -142,28 +143,24 @@ function submit() {
         displayScore();
       }
       else if (currentNumber == prevNumber) {
-        console.log("bruh");
         playerWon = undefined;
         showResult();
       }
       break;
     case "lower":
       if (currentNumber < prevNumber) {
-        console.log("Lesss goo");
         showResult();
         playerWon = true;
         score++;
         displayScore();
       }
       else if (currentNumber > prevNumber) {
-        console.log("Aww damn");
         playerWon = false;
         showResult();
         score--;
         displayScore();
       }
       else if (currentNumber == prevNumber) {
-        console.log("bruh");
         playerWon = undefined;
         showResult();
       }
@@ -175,22 +172,22 @@ function submit() {
 function imgChange() {
   switch (currentNumber) {
     case 1:
-      dice.src = "/images/1.png";
+      dice.src = "./images/1.png";
       break;
     case 2:
-      dice.src = "/images/2.png";
+      dice.src = "./images/2.png";
       break;
     case 3:
-      dice.src = "/images/3.png";
+      dice.src = "./images/3.png";
       break;
     case 4:
-      dice.src = "/images/4.png";
+      dice.src = "./images/4.png";
       break;
     case 5:
-      dice.src = "/images/5.png";
+      dice.src = "./images/5.png";
       break;
     case 6:
-      dice.src = "/images/6.png";
+      dice.src = "./images/6.png";
       break;
   }
 }

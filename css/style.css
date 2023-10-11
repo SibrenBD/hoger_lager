@@ -7,7 +7,7 @@
 
 /* compleet flex */
 html {
-  background-image: url(/images/bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,7 +88,6 @@ div {
   border: 3px dotted red;
   height: 42px;
   /* text-align: center; */
-
 }
 
 .turn {
