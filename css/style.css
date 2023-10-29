@@ -130,7 +130,7 @@ img {
   right: 0;
   bottom: 0;
   border: 2px solid lightcyan;
-  background-color: rgba(182, 37, 37, .8);
+  background-color: rgba(37, 56, 182, 0.832);
   color: #fff;
   z-index: 2;
   cursor: pointer;

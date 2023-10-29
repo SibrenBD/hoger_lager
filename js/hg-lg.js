@@ -126,47 +126,49 @@ function submit() {
 
 // THE CHECK
 
+if (score === 20) {
+  alert("You win");
+} else if (score === 0) {
+  alert("Game Over");
+  window.open("index.html", "_self");
+} else {
   switch (playerBet) {
     case "higher":
       if (currentNumber > prevNumber) {
-        console.log("Lesss goo");
         playerWon = true;
         score++;
         displayScore();
         showResult();
-      }
-      else if (currentNumber < prevNumber) {
-        console.log("Aww damn");
+      } else if (currentNumber < prevNumber) {
         playerWon = false;
         showResult();
         score--;
         displayScore();
-      }
-      else if (currentNumber == prevNumber) {
+      } else if (currentNumber == prevNumber) {
         playerWon = undefined;
         showResult();
       }
       break;
+
     case "lower":
       if (currentNumber < prevNumber) {
         showResult();
         playerWon = true;
         score++;
         displayScore();
-      }
-      else if (currentNumber > prevNumber) {
+      } else if (currentNumber > prevNumber) {
         playerWon = false;
         showResult();
         score--;
         displayScore();
-      }
-      else if (currentNumber == prevNumber) {
+      } else if (currentNumber == prevNumber) {
         playerWon = undefined;
         showResult();
       }
       break;
   }
   playerBet = "nothing";
+}
 }
 
 function imgChange() {

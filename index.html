@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
- <head>
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hoger Lager</title>
   <link rel="stylesheet" href="./css/style.css" />
- </head>
- <body>
+</head>
+
+<body>
   <div class="flex-container">
     <div class="flex-item1">
       <div class="header">
         <h1>Hoger Lager</h1>
         <div class="overlay" onclick="off()">
           <h1>Spel-regels<br></h1>
-          <p>Je drukt eerst op start, dan begint het spel. Zodra het spel begint kun je gokken of je hoger of lager gaat gooien.<br><br> Zodra je het goed hebt krijg je een punt. Verlies je krijg je een min punt </p>
+          <p>Je drukt eerst op start, dan begint het spel. Zodra het spel begint kun je gokken of je hoger of lager gaat
+            gooien.<br><br> Zodra je het goed hebt krijg je een punt. Verlies je krijg je een min punt.<br><br> als score = 0 heb je verloren. <br> als score = 20 heb je gewonnen.</p>
         </div>
         <button class="rules" onclick="on()">spelregels</button>
       </div>
@@ -27,9 +30,9 @@
     <!-- box-2 -->
     <div class="flex-item2">
       <div class="score-container">
-        <p class="score">score: </p>
+        <p class="score"> </p>
       </div>
-        <img class="dice" src="./images/1.png" alt="img1"></img>
+      <img class="dice" src="./images/1.png" alt="img1"></img>
     </div>
     <!-- box-3 -->
     <div class="flex-item3">
@@ -41,9 +44,10 @@
         <button class="btn-start">start game</button>
         <button class="btn-lower">Lager</button>
       </div>
-     </div>
+    </div>
   </div>
-    <!-- Javascript -->
-    <script src="./js/hg-lg.js"></script>
- </body>
+  <!-- Javascript -->
+  <script src="./js/hg-lg.js"></script>
+</body>
+
 </html>
